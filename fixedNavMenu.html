@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed Nav Menu By JavaScript</title>
+	<meta name="description" content="Fix Your Nav Menu Position By JavaScript | منوی فیکس برای سایت با جاوا اسکریپ فیکس کردن منو در بالای سایت"/>
+    <style>
+        body {
+            margin: 0 auto;
+            background-color: #f1f1f1;
+            height: 3000px;
+            width: 90%;
+
+        }
+        header,nav{
+            box-shadow: 0 5px 15px #0d732d;
+            border-radius: 0 0 5px 5px;
+        }
+
+        nav{
+            background-color: #1bc538;
+        }
+
+        nav > a {
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        nav > a:hover {
+            opacity: .7;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        .headerImg {
+            height: 100px;
+            text-align: center;
+            background-color: #a2ff9c;
+        }
+
+        .topMenu {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+		        .button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            background-color: rgb(255, 200, 0);
+            border-radius: 30px 3px;
+        }
+
+        .button:hover {
+            box-shadow: inset 0 20px 50px rgb(255, 165, 0);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!--Add A Header-->
+    <div class="headerImg">
+        <br><br>
+        Your Header Picture Here
+    </div>
+    <!--Add A Menu-->
+    <nav id="menu" class="">
+        <a href="#">Home Page</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </nav>
+</header>
+    <!--Back To Previous Page Button-->
+    <button class="button" onclick="history.back();">Back To Previous Page</button>
+<script src="fixedNavMenu.js"></script>
+
+</body>
+</html>
